@@ -1,0 +1,190 @@
+main {
+    margin-top: 155px;
+    border-bottom: 1px solid #110b11;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 7fr;
+    grid-template-areas: 
+        "title title title"
+        "subtitle subtitle subtitle"
+        "arrowL product arrowR";
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    grid-area: title;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 50px;
+}
+
+h3 {
+    grid-area: subtitle;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 40px;
+}
+
+main .product {
+    grid-area: product;
+}
+
+.arrowL {
+    grid-area: arrowL;
+    font-size: 45px;
+}
+
+.arrowR {
+    grid-area: arrowR;
+    font-size: 45px;
+}
+
+section h3{
+    border-top: 1px solid #110b11;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.all-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 20px;
+    margin-top: 8px;
+    padding-top: 20px;
+}
+
+.product {
+    display: inline-block;
+    border: 1px solid #110b11;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.product img {
+    width: 400px;
+    height: 290px;
+}
+
+.product p{
+    padding-left: 20px;
+}
+
+a + p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a + p + p {
+    color: #41792e;
+}
+
+.stock0 {
+    color: #FF1D15;
+}
+
+.product div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product button {
+    margin: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #110b11;
+    color: #F1F1F0;
+    font-size: 20px;
+}
+
+.product button:hover {
+    background-color: #8559c9;
+    border: none;
+}
+
+@media screen and (max-width: 575px) {
+    .product1{
+        display: none;
+    }
+
+    main{
+        padding-bottom: 50px;
+    }
+
+    section h3{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1024px){
+    .product1{
+        display: none;
+    }
+
+    main{
+        padding-bottom: 50px;
+    }
+
+    section h3{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 7fr;
+        grid-template-areas: 
+            "title title title title"
+            "subtitle subtitle subtitle subtitle"
+            "arrowL product product1 arrowR";
+        justify-items: center;
+        align-items: center;
+        column-gap: 15px;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    
+    h1 {
+        grid-area: title;
+        font-family: "Archivo Black", sans-serif;
+        font-size: 50px;
+    }
+    
+    h3 {
+        grid-area: subtitle;
+        font-family: "Archivo Black", sans-serif;
+        font-size: 40px;
+    }
+    
+    main .product {
+        grid-area: product;
+        justify-self: end;
+    }
+
+    main .product1{
+        grid-area: product1;
+        justify-self: start;
+    }
+    
+    .arrowL {
+        grid-area: arrowL;
+        font-size: 45px;
+        justify-self: end;
+    }
+    
+    .arrowR {
+        grid-area: arrowR;
+        font-size: 45px;
+        justify-self: start;
+    }
+
+    section h3{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

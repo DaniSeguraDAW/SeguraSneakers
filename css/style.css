@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1F1F0;
+    color: #110b11;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #A4A2A0;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+header form {
+    display: flex;
+}
+
+.header-nav{
+    color: #F1F1F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #110b11;
+    border-radius: 20px;
+    padding: 8px 20px;
+
+}
+
+.header-nav:hover{
+    background-color: #8559c9;
+}
+
+.header-nav i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+header form input{
+    background-color: #F1F1F0;
+    color: #110b11;
+    border: none;
+    border-radius: 20px;
+}
+
+form i{
+    margin-left: 40px;
+}
+
+header i {
+    font-size: 50px;
+}
+
+header img {
+    padding: 10px;
+    width: 120px;
+    height: auto;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    z-index: 999;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -302px;
+    width: 300px;
+    height: 100%;
+    background-color: #A4A2A0;
+    transition: all 0.3s ease;
+    border-left: 2px solid #110b11;
+}
+
+#toggle:checked + .toggle-btn ~ .menu {
+    right: 0;
+}
+
+.menu ul {
+    margin-top: 100px;
+    padding: 20px;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+}
+
+.menu ul li a {
+    color: #F1F1F0;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #8559c9;
+}
+
+footer{
+    margin-top: 85px;
+    padding: 20px;
+    background-color: #110b11;
+    color: #F1F1F0;
+    text-align: center;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes a{
+    display: flex;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 15px;
+    color: #F1F1F0;
+}
+
+.enlaces ul{
+    text-decoration: none;
+    color: #F1F1F0;
+    list-style-type: none;
+    border-left: 2px solid #F1F1F0;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.enlaces ul li{
+    padding: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #F1F1F0;
+}
+
+footer a:hover{
+    color: #8559c9;
+}
+
+.derechos{
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 10000px){
+    header input[type="checkbox"]{
+        display: none
+        ;
+    }
+}
+
+@media screen and (max-width: 575px){
+    form .buscar {
+        display: none;
+    }
+
+    .tablet-pc{
+        display: none;
+    }
+
+    .sesion{
+        display: none;
+    }
+
+    .home{
+        display: none;
+    }
+
+    .carrito{
+        display: none;
+    }
+
+    .acerca{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 1024px){
+    .toggle-btn{
+        display: none;
+    }
+
+    header{
+        height: 190px;
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logo buscar buscar"
+            "sesion home carrito"
+        ;
+        justify-items: start;
+    }
+
+    header img{
+        grid-area: logo;
+    }
+
+    .sesion{
+        grid-area: sesion;
+        justify-self: end;
+    }
+
+    .home{
+        grid-area: home;
+        justify-self: center;
+    }
+
+    .carrito{
+        grid-area: carrito;
+        justify-self: start;
+    }
+
+    header form{
+        grid-area: buscar;
+        justify-self: end;
+        margin: 0;
+    }
+
+    header form i{
+        margin-left: 0px;
+        padding-right: 10px;
+        font-size: 35px;
+    }
+
+    header form{
+        padding-right: 25px;
+    }
+
+    main{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .toggle-btn{
+        display: none;
+    }
+    
+    header{
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: 
+            "logo login home carrito buscar"
+        ;
+        justify-items: center;
+    }
+
+    header img{
+        grid-area: logo;
+    }
+
+    .sesion{
+        grid-area: login;
+        justify-self: end;
+    }
+
+    .home{
+        grid-area: home;
+        justify-self: center;
+    }
+
+    .carrito{
+        grid-area: carrito;
+        justify-self: start;
+    }
+
+    header form{
+        grid-area: buscar;
+        justify-self: end;
+        margin: 0;
+    }
+
+    header form{
+        padding-right: 25px;
+    }
+
+    header form i{
+        margin-left: 0px;
+        padding-right: 10px;
+        font-size: 35px;
+    }
+
+    main{
+        margin-top: 50px;
+    }
+}

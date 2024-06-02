@@ -1,0 +1,219 @@
+h1 {
+    margin-top: 180px;
+    margin-bottom: 50px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+p:not(header p){
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.stock{
+    color: #41792e;
+    font-size: 20px;
+}
+
+.description{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main img{
+    padding: 15px;
+    border: 1px solid #110b11;
+    border-radius: 20px;
+    margin: auto 5px 45px 5px;
+    height: auto;
+}
+
+.comprar:hover{
+    background-color: #8559c9;
+}
+
+.talla-bttn{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.talla-bttn button{
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px 20px;
+    border: none;
+    background-color: #110b11;
+    color: #F1F1F0;
+    font-size: 20px;
+}
+
+.talla-bttn button:hover{
+    background-color: #8559c9;
+}
+
+.talla-bttn button:focus{
+    background-color: #8559c9;
+}
+
+.talla-titulo{
+    margin-left: 10%;
+    margin-top: 70px;
+}
+
+.valoracio{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #110b11;
+    border-top: 1px solid #110b11;
+    justify-content: center;
+}
+
+.valoracio h3{
+    margin: 0px;
+    padding-right: 20px;
+}
+
+.valoracio i{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 575px){
+    .comprar{
+        width: 100%;
+        height: 70px;
+        border: none;
+        background-color: #110b11;
+        color: #F1F1F0;
+        font-size: 20px;
+    }
+
+    .comprar i{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+    h1{
+        margin-top: 20px;
+    }
+
+    main img{
+        margin: auto 7% 45px 7%;
+    }
+
+    .comprar{
+        width: 300px;
+        margin-left: 15px;
+        font-size: 25px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 20px;
+        color: #F1F1F0;
+        background-color: #110b11;
+        margin-bottom: 30px;
+    }
+
+    .comprar i{
+        padding-right: 20px;
+    }
+
+    .talla-bttn{
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+
+        grid-template-areas: 
+            "title title title"
+            "img name name"
+            "img stock stock"
+            "img description description"
+            "img price bttn"
+        ;
+        align-items: start;
+        justify-items: start;
+
+
+    }
+
+    h1{
+        margin-top: 30px;
+        grid-area: title;
+        justify-self: center;
+    }
+
+    main img{
+        grid-area: img;
+        justify-self: end;
+        width: 620px;
+    }
+
+    main h3{
+        grid-area: name;
+    }
+
+    .stock{
+        grid-area: stock;
+    }
+
+    .description{
+        grid-area: description;
+    }
+
+    .price{
+        grid-area: price;
+    }
+
+    .comprar i{
+        display: none;
+    }
+
+    .comprar{
+        grid-area: bttn;
+        justify-self: center;
+        background-color: #110b11;
+        color: #F1F1F0;
+        padding: 15px 20px;
+        font-size: 20px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .talla-bttn{
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
