@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>SeguraSneakers</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../assets/logo.png" alt="Logo de Segura Sneakers">
+        </a>
+        <form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="buscar" type="text" name="search" placeholder="Search..">
+        </form>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggle-btn">
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+
+        <div class="sesion">
+            <a href="" class="header-nav">
+                <i class="fa-solid fa-user"></i>
+                <p>Login</p>
+            </a>
+        </div>
+
+        <div class="home">
+            <a href="../index.html" class="header-nav">
+                <i class="fa-solid fa-house"></i>
+                <p>Inicio</p>
+            </a>
+        </div>
+        <div class="carrito">
+            <a href="" class="header-nav">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Carrito</p>
+            </a>
+        </div>
+    </header>
+
+    <h1>Carrito</h1>
+
+    <div class="pc-div">
+        <main>
+            <div class="style-pc">
+            <h3>Productos: 3</h3>
+            <h3>Total: 540€</h3>
+            <p>Gastos de envio: Gratis</p>
+            <a href="../views/checkout.html">
+                <button class="comprar-pc item">Terminar compra</button>
+            </a>
+            <a href="../index.html">
+                <button class="inicio-pc item">Seguir comprando</button>
+            </a>
+            </div>
+        </main>
+
+        <section class="container">
+
+            <div class="sep"></div>
+
+            <article class="producto">
+                <a href="detallesProducto.html">
+                    <img src="../assets/sneaker8.png" alt="imagen del producto en la cesta">
+                </a>
+                <h4>Zapatilla negra amarilla</h4>
+                <h5>180€</h5>
+                <form>
+                    <article class="form-talla">
+                        <label for="talla">Talla:</label>
+                        <select class="talla" name="talla">
+                            <option value="41">41</option>
+                            <option value="41">42</option>
+                            <option value="41">43</option>
+                            <option value="41">44</option>
+                            <option value="41">45</option>
+                            <option value="41">46</option>
+                            <option value="41">47</option>
+                            <option value="41">48</option>
+                            <option value="41">49</option>
+                            <option value="41">50</option>
+                            <option value="41">51</option>
+                            <option value="41">52</option>
+                        </select>
+
+                    </article>
+                    <article class="form-qty"> 
+                        <label for="qty">Cantidad:</label>
+                        <input type="number" name="qty" class="qty" value="1" min="1">
+                    </article>
+
+                    <button class="bttn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                        <p>Eliminar</p>
+                    </button>
+                </form>
+            </article>
+
+            <div class="sep"></div>
+
+            <article class="producto">
+                <a href="detallesProducto.html">
+                    <img src="../assets/sneaker8.png" alt="imagen del producto en la cesta">
+                </a>
+                <h4>Zapatilla negra amarilla</h4>
+                <h5>180€</h5>
+                <form>
+                    <article class="form-talla">
+
+                        <label for="talla">Talla:</label>
+                        <select class="talla" name="talla">
+                            <option value="41">41</option>
+                            <option value="41">42</option>
+                            <option value="41">43</option>
+                            <option value="41">44</option>
+                            <option value="41">45</option>
+                            <option value="41">46</option>
+                            <option value="41">47</option>
+                            <option value="41">48</option>
+                            <option value="41">49</option>
+                            <option value="41">50</option>
+                            <option value="41">51</option>
+                            <option value="41">52</option>
+                        </select>
+
+                    </article>
+                    <article class="form-qty"> 
+                        <label for="qty">Cantidad:</label>
+                        <input type="number" name="qty" class="qty" value="1" min="1">
+                    </article>
+
+                    <button class="bttn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                        <p>Eliminar</p>
+                    </button>
+                </form>
+            </article>
+
+            <div class="sep"></div>
+
+            <article class="producto">
+                <a href="detallesProducto.html" class="img">
+                    <img src="../assets/sneaker8.png" alt="imagen del producto en la cesta">
+                </a>
+                <h4>Zapatilla negra amarilla</h4>
+                <h5>180€</h5>
+                <form>
+                    <article class="form-talla">
+
+                        <label for="talla">Talla:</label>
+                        <select class="talla" name="talla">
+                            <option value="41">41</option>
+                            <option value="41">42</option>
+                            <option value="41">43</option>
+                            <option value="41">44</option>
+                            <option value="41">45</option>
+                            <option value="41">46</option>
+                            <option value="41">47</option>
+                            <option value="41">48</option>
+                            <option value="41">49</option>
+                            <option value="41">50</option>
+                            <option value="41">51</option>
+                            <option value="41">52</option>
+                        </select>
+
+                    </article>
+                    <article class="form-qty"> 
+                        <label for="qty">Cantidad:</label>
+                        <input type="number" name="qty" class="qty" value="1" min="1">
+                    </article>
+
+                    <button class="bttn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                        <p>Eliminar</p>
+                    </button>
+                </form>
+            </article>
+
+            <div class="sep"></div>
+        </section>
+        <a href="../views/checkout.html">
+            <button class="terminar-compra">Terminar compra</button>
+        </a>
+    </div>
+
+    <footer>
+        <nav>
+            <article class="redes">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </article>
+            <article class="enlaces">
+                <ul>
+                    <li>
+                        <a href="">Devoluciones</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="">Terminos y condiciones</a>
+                    </li>
+                </ul>
+            </article>
+        </nav>
+        <p class="derechos"><i class="fa-regular fa-copyright"></i> SeguraSneakers, inc. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

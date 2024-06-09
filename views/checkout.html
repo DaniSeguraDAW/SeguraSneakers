@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/detallesProducto.css">
+    <link rel="stylesheet" href="../css/checkout.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>SeguraSneakers</title>
 </head>
@@ -60,48 +60,54 @@
         </div>
     </header>
 
-    <main>
-        <h1>Detalles del producto</h1>
-        <h3>Zapatillas multicolor 3</h3>
-        <p class="stock">quedan: 31</p>
-        <p class="price">180€</p>
-        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptatibus architecto ab cupiditate! Sunt voluptates, possimus nam suscipit voluptas earum modi eum quo consectetur iste aperiam.</p>
-        <img src="../assets/sneaker14.png">
-        <a href="carrito.html">
-            <button class="comprar"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</button>
-        </a>
-    </main>
+    <h1>Checkout</h1>
 
+    <main>
+        
+        <form>
+            <div class="personal">
+                <h2>Información Personal</h2>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre *">
             
-    <section class="talla">
-        <article class="talla-titulo">
-            <h3>Talla</h3>
-        </article>
-        <article class="talla-bttn">
-            <button>Talla 41</button>
-            <button>Talla 42</button>
-            <button>Talla 43</button>
-            <button>Talla 44</button>
-            <button>Talla 45</button>
-            <button>Talla 46</button>
-            <button>Talla 47</button>
-            <button>Talla 48</button>
-            <button>Talla 49</button>
-            <button>Talla 50</button>
-            <button>Talla 51</button>
-            <button>Talla 52</button>
-        </article>
-    </section>
-    <section>
-        <article class="valoracio">
-            <h3>Valoración</h3>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </article>
-    </section>
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido *">
+            </div>
+    
+            <div class="contacto">
+                <h2>Datos de Contacto</h2>
+                <input type="email" id="email" name="email" required placeholder="email *">
+            
+                <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono *">
+            </div>
+    
+            <div class="direccion">
+                <h2>Dirección de Envío</h2>
+                <input type="text" id="direccion" name="direccion" required placeholder="direccion *">
+            
+                <input type="text" id="calle" name="calle" required placeholder="Dirección de la Calle *">
+            
+                <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad *">
+
+                <input type="text" id="codigo-postal" name="codigo-postal" required placeholder="Código Postal">
+            
+                <input type="text" id="pais" name="pais" required placeholder="País *">
+            </div>
+
+            <div class="tarjeta">
+                <h2>Información de la Tarjeta</h2>        
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" required placeholder="Número de Tarjeta *">
+    
+                <input type="text" id="expiracion" name="expiracion" placeholder="MM/AA *" required>
+            
+                <input type="text" id="cvv" name="cvv" required placeholder="CVV *">
+            </div>
+    
+            
+                <button type="submit">
+                    <a href="confirmacion.html">Terminar pedido</a>
+                </button>
+        </form>
+
+    </main>
 
     <footer>
         <nav>
